@@ -1,8 +1,10 @@
-# ShadowGuard v2 (educational prototype)
+   # ShadowGuard
+   Real-time ransomware-like behavior detection using file-system activity analysis (Windows). Educational prototype for an Operating Systems Lab mini project.
 
-Setup (once):   pip install -r requirements.txt
-Live demo:      python dashboard.py        (click "1 Setup sandbox", then the scenario buttons)
-Evaluation:     python evaluate.py --runs 3 --compare   -> results.csv, results.md
+   Name: Arsheya Singhal | Reg. No: 24BDS0042
 
-Files: engine.py (detection), dashboard.py (GUI), demo_tools.py (safe scenarios, sandbox only), evaluate.py (automated tests).
-Everything runs inside ~/ShadowGuardDemo/sandbox. The tool only alerts; it never blocks or deletes anything.
+   ## Run
+   pip install watchdog psutil
+   py dashboard.py
+
+   Tested only with a safe simulator on dummy files inside a sandbox folder. Not an antivirus.
